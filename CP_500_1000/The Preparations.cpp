@@ -4,19 +4,16 @@
 #include <algorithm>
 using namespace std;
 
-// ---------------------------
-// Function to solve one test case
-// ---------------------------
 void solve() {
-    int n;
-    cin >> n;  // input size of array
-    cout << 2*n -2;
-    cout << "\n"; // new line after each test case
+    int M, N, K;
+    cin >> M >> N >> K;
+
+    if(N*K >= M)
+        cout << "NO\n";
+    else
+        cout << "YES\n";
 }
 
-// ---------------------------
-// Main function
-// ---------------------------
 int main() {
     ios::sync_with_stdio(false); // make cin/cout faster
     cin.tie(nullptr); // untie cin from cout for speed
